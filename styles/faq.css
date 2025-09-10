@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.content{
+    background-image: url('../images/pexels-janetrangdoan-1128678.jpg');  
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh; 
+    width: 100%;     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.accordion {
+    background-color:transparent;
+    background: #81C784;
+    color: #212121;
+    cursor: pointer;
+    padding: 18px;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background: #FBC02D; 
+      color: #212121;
+  }
+  
+  .accordion , .panel{
+    width: 60%;
+  }
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+  h1{
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+    color:#F57C00 ;
+  }
+
+  .panel > p{
+    background: #F5F5F5;
+    color: #333;
+    margin: 0px;
+    padding: 20px;
+  }
