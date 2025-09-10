@@ -20,8 +20,8 @@ body{
 
 .accordion {
     background-color:transparent;
-    background: #81C784;
-    color: #212121;
+    background: #81C784; 
+  color: #212121;
     cursor: pointer;
     padding: 18px;
     text-align: center;
@@ -48,12 +48,26 @@ body{
     overflow: hidden;
   }
 
-  h1{
+  /* h1{
     margin: 0px;
     padding: 20px;
     text-align: center;
     color:#F57C00 ;
-  }
+  } */
+
+  h1 {
+    margin: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
+    color: white; 
+    background: rgba(0,0,0,0.5); 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-width: 80%;
+}
 
   .panel > p{
     background: #F5F5F5;
@@ -61,3 +75,4 @@ body{
     margin: 0px;
     padding: 20px;
   }
+

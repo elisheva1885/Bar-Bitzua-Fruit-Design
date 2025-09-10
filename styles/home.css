@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(249, 225, 225);
+    background-color: rgb(255, 255, 255);
     margin: 15px;
     padding: 15px;
     border-radius: 10px;
@@ -63,7 +63,7 @@ body {
     background: #fff;
     text-align: center;
     color: #333;
-    width: 90%;
+    width: 100%;
     left: 0;
     padding: 4px 8px;
     box-sizing: border-box;
@@ -85,12 +85,7 @@ body {
     box-sizing: border-box; 
 
 }
-.img_label > h2 {
-    font-size: 1.1rem;
-}
-.img_label > p {
-    font-size: 0.9rem;
-}
+
 .single_img{
     display: none;
 }
@@ -104,7 +99,7 @@ body {
 
     .link1, .link2, .link3 {
         width: 90%; 
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .link_img {
@@ -115,12 +110,7 @@ body {
         width: 100%;
         height: auto;
     }
-    .img_label > h2 {
-        font-size: 0.9rem;
-    }
-    .img_label > p {
-        font-size: 0.7rem;
-    }
+
     #myCarousel{
         display: none;
     }
@@ -130,4 +120,5 @@ body {
         height: auto;
         margin-top: 20px;
     }
+
 }
