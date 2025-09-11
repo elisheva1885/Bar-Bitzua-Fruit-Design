@@ -1,4 +1,4 @@
-body {
+/*body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -22,9 +22,8 @@ form {
     flex: 0 0 auto;
     width: 50%;
     max-width: 600px;
-
-    /* border: 2px solid black;
-    background: lightcyan; */
+    border: 2px solid black;
+    background: lightcyan;
     margin: 25px;
     padding: 25px;
     display: flex;
@@ -36,14 +35,14 @@ form {
     border: 5px solid #D32F2F;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
-    /* cursor: pointer;
+    cursor: pointer;
     backdrop-filter: blur(10px);
     position: relative;
-    overflow: hidden; */
+    overflow: hidden;
     animation: slideIn 0.8s ease-out;
 }
 
-/* @keyframes slideIn {
+@keyframes slideIn {
     from {
         opacity: 0;
         transform: translateY(30px);
@@ -52,7 +51,7 @@ form {
         opacity: 1;
         transform: translateY(0);
     }
-} */
+}
 
 h2 {
     color: #2E7D32;
@@ -88,9 +87,9 @@ h2 {
     margin: 10px;
     flex: 3;
 }
-
-label {
-    /* flex: 0 0 auto; */
+*/
+/* flex: 0 0 auto; */
+/* label {   
     color: #212121;
     margin-left: 0px;
     font-weight: bold;
@@ -150,4 +149,278 @@ textarea {
     border-radius: 20px;
     cursor: pointer;
     resize: none;
+}*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/fruits/pexels-frostroomhead-3471790.jpg');  
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh; 
+    width: 100%;       
+}
+
+form {
+    flex: 0 0 auto;
+    width: 50%;
+    max-width: 600px;
+    margin: 25px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background: #F9FFFF; 
+    border: 5px solid #D32F2F;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    border-radius: 20px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    animation: slideIn 0.8s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Subtle gradient overlay */
+form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #D32F2F, #F57C00, #2E7D32);
+    background-size: 200% 100%;
+    animation: gradientFlow 3s ease-in-out infinite;
+}
+
+@keyframes gradientFlow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+h2 {
+    color: #2E7D32;   
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #2E7D32, #1B5E20);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.name_input, .email_input, .phone_input, .subject_input {
+    width: 100%;
+    margin: 10px 0;
+    flex: 1;
+}
+
+.textarea_input {
+    margin: 10px 0;
+    flex: 3;
+    width: 100%;
+}
+
+label {
+    color: #212121;
+    margin-left: 0px;
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+input, textarea {
+    background-color: transparent;
+    border: 2px solid #F57C00;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #2E7D32; 
+    box-shadow: 0 0 10px rgba(46, 125, 50, 0.3);
+    background-color: rgba(249, 255, 255, 0.8);
+    transform: translateY(-2px);
+}
+
+input {
+    height: 50px;
+    padding: 12px 20px;
+}
+
+textarea {
+    height: 120px;
+    border-radius: 20px;
+    cursor: pointer;
+    resize: none;
+    padding: 15px 20px;
+}
+
+button {
+    flex: 0 0 auto;
+    margin-top: 25px;
+    padding: 15px 40px;
+    width: auto;
+    min-width: 150px;
+    background-color: #2E7D32;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+button:hover {
+    background-color: #1B5E20;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(46, 125, 50, 0.4);
+}
+
+button:hover::before {
+    left: 100%;
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+/* Hover effects for form elements */
+.name_input:hover, .email_input:hover, .phone_input:hover, .subject_input:hover, .textarea_input:hover {
+    transform: scale(1.01);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        min-width: 120px;
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        width: 95%;
+        padding: 20px;
+        margin: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    input {
+        height: 45px;
+        padding: 10px 15px;
+    }
+
+    textarea {
+        height: 100px;
+        padding: 12px 15px;
+    }
+
+    button {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+}
+
+/* Loading animation for form submission */
+.loading {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.loading button {
+    background: linear-gradient(90deg, #2E7D32, #1B5E20, #2E7D32);
+    background-size: 200% 100%;
+    animation: loadingGradient 1.5s ease-in-out infinite;
+}
+
+@keyframes loadingGradient {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
 }

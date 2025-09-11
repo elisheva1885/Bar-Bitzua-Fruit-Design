@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/nav_footer.css">
     <link rel="stylesheet" href="../styles/contact.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">   
 
 </head>
 <body>
@@ -43,18 +44,17 @@
     </nav>
   
     <div class="content">
-    <form action="thank_you.html">
+    <form action="thank_you.html" onsubmit="return emailFormat()">
         <h2>Contact Us</h2>
         <div class="name_input">
             <label for="name">Full Name</label>
             <input type="text" id="name" name="name" required>
         </div>
     
-        <div class="email_input">
+        <div id="email_input">
             <label for="email">Email Address</label>
             <input type="email" id="email" name="email" required>
         </div>
-    
     
     <div class="phone_input">
         <label for="phone">Phone Number</label>
@@ -67,11 +67,25 @@
         <button type="submit">Send Message</button>
     </form>
 </div>
-    <div class="footer">
-        <p>Elisheva Safrai</p>
+<footer class="footer">
+    <div class="social-links">
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="https://www.telegram.org" target="_blank" aria-label="Telegram">
+        <i class="fa-brands fa-telegram"></i>
+      </a>
     </div>
+  <p>&copy; All rights reserved | Elisheva Safrai – FullStack Developer | 2025</p>
+</footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-
+  <script src="../scripts/contant.js"></script>
     <!-- Optional: Auto-close mobile menu when clicking links -->
     <script>
         // Close mobile menu when clicking on nav links

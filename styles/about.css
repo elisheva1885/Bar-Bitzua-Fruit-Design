@@ -1,81 +1,137 @@
 
-.row_about_content{
+
+
+.row_about_content {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 40px 0;
 }
 
-.about_content{
+/* הקונטיינר הכללי */
+.about_content {
     flex: 0 0 auto;
-    width: 75%;
-    background: #F5F5F5;    border-radius: 35px;
-    cursor: pointer;
+    width: 80%;
+    background: #ffffffd9;
+    border-radius: 30px;
     margin: 25px;
-    padding: 60px;
+    padding: 40px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    gap: 30px;  /* רווח בין התמונה לטקסט */
 }
-.about_image{
+
+/* תמונה ראשית */
+.about_image {
     flex: 1;
-    padding: 15px;
-    width: 30%;
-    height: 40%;
-    display: flex;
-    padding-right: 80px;
-}
-.about_txt{
-flex: 5;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
-.content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../images/fruits/julia-zolotova-M_xIaxQE3Ms-unsplash.jpg');  
-    background-repeat: no-repeat;  
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 100vh; 
-    width: 100%;     
+/* טקסט */
+.about_txt {
+    flex: 2;
 }
 
-p{
-    font-size: 25px;
-    color: #2E7D32;
-}
-h2{
-    font-size: 60px;
-    font-weight: lighter;
+.about_txt h2 {
+    font-size: 48px;
+    font-weight: 600;
     font-style: italic;
-    color:  #F57C00;
+    color: #F57C00;
+    margin-bottom: 20px;
 }
 
-@media screen and (max-width: 890px) {
-    .about_content{
+.about_txt p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #2E7D32;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* כפתור */
+#moreBtn {
+    background-color: #F57C00;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#moreBtn:hover {
+    background-color: #d96800;
+}
+
+/* החלק של ה-Read More */
+.moreInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.moreInfo img {
+    flex: 1;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.moreText {
+    flex: 2;
+    font-size: 18px;
+    color: #2E7D32;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* התאמות למסכים קטנים */
+@media screen and (max-width: 980px) {
+    .about_content {
         flex-direction: column;
         width: 90%;
         padding: 20px;
-        border-radius: 20px;
     }
-    .about_image{
-        width: 40%;
-        height: auto;
-        padding-right: 0px;
+
+    .about_image {
+        max-width: 80%;
         margin-bottom: 20px;
     }
-    .about_txt{
+
+    .about_txt {
         text-align: center;
     }
-    p{
-        font-size: 18px;
+
+    .about_txt h2 {
+        font-size: 36px;
     }
-    h2{
-        font-size: 40px;
+
+    .about_txt p {
+        font-size: 16px;
     }
-    
+
+    .moreInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .moreInfo img {
+        max-width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .moreText {
+        text-align: center;
+        font-size: 16px;
+    }
 }

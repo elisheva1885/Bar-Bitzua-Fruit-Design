@@ -2,81 +2,129 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/about.css">
-    <link rel="stylesheet" href="../styles/nav_footer.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/about.css">
+  <link rel="stylesheet" href="../styles/nav_footer.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./home.html">
-            <img src="../images/logo.png" alt="Logo" class="logo">
-          </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a  class="nav-link" href="home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a  class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a  class="nav-link" href="media.html">Media</a>
-                    </li>
-                    <li class="nav-item">
-                      <a  class="nav-link" href="faq.html">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                      <a  class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-  
-    <div class="content">
+  <nav class="navbar navbar-expand-md navbar-dark navbar-custom sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./home.html">
+        <img src="../images/logo.png" alt="Logo" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="media.html">Media</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content">
     <div class="row_about_content">
-    <div class="about_content">
+      <div class="about_content">
         <img src="../images/fruits/pexels-cottonbro-8959911.jpg" class="about_image" alt="about_image">
         <div class="about_txt">
-        <h2>About Me</h2>
-<p>
-            Hi, I’m Elisheva—a fruit platter designer with a knack for turning everyday fruit into eye-catching, taste-bud-tingling art. I don’t just slice and arrange; I orchestrate color, texture, and flavor into little edible stories that make people stop, smile, and maybe even Instagram first.
-        </p>
-        <p>
-            Whether it’s a birthday, wedding, holiday, or just because, each platter is crafted with a playful mix of elegance and fun. I balance beauty and flavor, sophistication and whimsy, to make every bite a tiny celebration. My mission? To turn fruit into moments that are as memorable as they are delicious—because life’s too short for boring platters.
-        </p>
-    </div>
-    </div>
-</div>
-</div>
-    <div class="footer">
-        <p>Elisheva Safrai</p>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+          <h2>About Me</h2>
+          <p>
+            Hi, I’m Elisheva—a fruit platter designer with a knack for turning everyday fruit into eye-catching,
+            taste-bud-tingling art. I don’t just slice and arrange; I orchestrate color, texture, and flavor into little
+            edible stories that make people stop, smile, and maybe even Instagram first.
+          </p>
+          <p>
+            Whether it’s a birthday, wedding, holiday, or just because, each platter is crafted with a playful mix of
+            elegance and fun. I balance beauty and flavor, sophistication and whimsy, to make every bite a tiny
+            celebration. My mission? To turn fruit into moments that are as memorable as they are delicious—because
+            life’s too short for boring platters.
+          </p>
+          <button id="moreBtn" onclick="readMoreBtn()">Read More</button>
+          <div id="moreTextDiv" style="display: none; margin-top: 15px;">
+            <div class="moreInfo">
+              <img src="../images/fruits/vd-photography-sEK8OMsJJ08-unsplash.jpg" class="about_image" alt="about_image">
+              <div class="moreText">
+                <p>
+                  Every platter I create is a journey—from carefully selecting the freshest, most vibrant fruits to
+                  experimenting with shapes, layers, and pairings that surprise and delight. I think of each design as a
+                  canvas, where strawberries can become accents of passion, melons form the foundation of warmth, and
+                  grapes add playful bursts of sweetness.
+                </p>
+                <p>
+                  My goal is not just to feed, but to inspire. I want your guests to gather around the platter in awe,
+                  to feel that spark of joy that only something crafted with love and intention can bring. Fruit is
+                  simple, yet when handled with creativity, it transforms into art that connects people—whether they’re
+                  celebrating milestones or just savoring the beauty of everyday life.
+                </p>
+                <p>
+                  For me, fruit platters aren’t just food—they’re a way to tell stories, to bring people closer, and to
+                  make moments shine brighter. And that’s what keeps me excited to pick up the knife, the board, and the
+                  fruit, day after day.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <!-- Optional: Auto-close mobile menu when clicking links -->
-    <script>
-        // Close mobile menu when clicking on nav links
-        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                const navbarCollapse = document.querySelector('.navbar-collapse');
-                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-                if (bsCollapse) {
-                    bsCollapse.hide();
-                }
-            });
-        });
-    </script>   
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="https://www.telegram.org" target="_blank" aria-label="Telegram">
+        <i class="fa-brands fa-telegram"></i>
+      </a>
+    </div>
+    <p>&copy; All rights reserved | Elisheva Safrai – FullStack Developer | 2025</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Optional: Auto-close mobile menu when clicking links -->
+  <script>
+    // Close mobile menu when clicking on nav links
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+        if (bsCollapse) {
+          bsCollapse.hide();
+        }
+      });
+    });
+  </script>
+  <script src="../scripts/about.js"></script>
 </body>
 
 </html>
