@@ -1,5 +1,18 @@
-
-
+ 
+@font-face {
+    font-family: 'StoryScript-Regular';
+    src: url('../fonts/StoryScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+ }
+ 
+ @font-face {
+    font-family: 'SmoochSans-VariableFont_wght';
+    src: url('../fonts/SmoochSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+ }
+ 
 
 .row_about_content {
     display: flex;
@@ -7,8 +20,13 @@
     align-items: center;
     margin: 40px 0;
 }
-
-/* הקונטיינר הכללי */
+.content{
+    background-image: url('../images/fruits/julia-zolotova-M_xIaxQE3Ms-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+}
 .about_content {
     flex: 0 0 auto;
     width: 80%;
@@ -21,10 +39,9 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    gap: 30px;  /* רווח בין התמונה לטקסט */
+    gap: 30px;  
 }
 
-/* תמונה ראשית */
 .about_image {
     flex: 1;
     width: 100%;
@@ -34,7 +51,6 @@
     object-fit: cover;
 }
 
-/* טקסט */
 .about_txt {
     flex: 2;
 }
@@ -45,17 +61,20 @@
     font-style: italic;
     color: #F57C00;
     margin-bottom: 20px;
+    font-family: 'StoryScript-Regular', sans-serif;
+
 }
 
 .about_txt p {
-    font-size: 20px;
+    font-family: 'SmoochSans-VariableFont_wght';
+    font-size: 40px;
     line-height: 1.6;
     color: #2E7D32;
     margin-bottom: 15px;
     text-align: justify;
+
 }
 
-/* כפתור */
 #moreBtn {
     background-color: #F57C00;
     color: white;
@@ -70,7 +89,6 @@
     background-color: #d96800;
 }
 
-/* החלק של ה-Read More */
 .moreInfo {
     display: flex;
     flex-direction: row;
@@ -95,7 +113,6 @@
     line-height: 1.6;
 }
 
-/* התאמות למסכים קטנים */
 @media screen and (max-width: 980px) {
     .about_content {
         flex-direction: column;

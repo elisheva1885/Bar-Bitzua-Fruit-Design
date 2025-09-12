@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Faq</title>
     <link rel="stylesheet" href="../styles/nav_footer.css">
     <link rel="stylesheet" href="../styles/faq.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
@@ -112,18 +112,7 @@
     <script src="../scripts/faq.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Optional: Auto-close mobile menu when clicking links -->
-    <script>
-        // Close mobile menu when clicking on nav links
-        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                const navbarCollapse = document.querySelector('.navbar-collapse');
-                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-                if (bsCollapse) {
-                    bsCollapse.hide();
-                }
-            });
-        });
-    </script>   
+    <script src="../scripts/navbar.js"></script>
+
 </body>
 </html>

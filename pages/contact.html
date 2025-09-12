@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="../styles/nav_footer.css">
     <link rel="stylesheet" href="../styles/contact.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
@@ -68,7 +68,7 @@
         <label for="message">Message</label>
         <textarea id="message" name="message" placeholder="Tell us about your project or inquiry..." required></textarea>
     </div>
-        <button type="submit">Send Message</button>
+        <button id="btn" type="submit">Send Message</button>
     </form>
 </div>
 <footer class="footer">
@@ -90,18 +90,7 @@
 </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
   <script src="../scripts/contant.js"></script>
-    <!-- Optional: Auto-close mobile menu when clicking links -->
-    <script>
-        // Close mobile menu when clicking on nav links
-        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                const navbarCollapse = document.querySelector('.navbar-collapse');
-                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-                if (bsCollapse) {
-                    bsCollapse.hide();
-                }
-            });
-        });
-    </script>   
+    <script src="../scripts/navbar.js"></script>
+
 </body>
 </html>

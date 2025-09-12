@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Bungee-Regular';
+    src: url('../fonts/Bungee-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+ }
+
 body {
     margin: 0;
     padding: 0;
@@ -66,9 +73,7 @@ body {
 
 .logo {
     height: 150px;
-    /* adjust size */
     width: auto;
-    /* keep aspect ratio */
     display: block;
     margin-left: 70px;
 }
@@ -82,7 +87,10 @@ body {
     flex-wrap: wrap;
 }
 
-
+a{
+    font-family: 'Bungee-Regular';
+    font-weight: bolder;
+}
 .social-links {
     display: flex;
     gap: 20px;

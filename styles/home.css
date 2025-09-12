@@ -1,3 +1,18 @@
+ 
+@font-face {
+    font-family: 'StoryScript-Regular';
+    src: url('../fonts/StoryScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+ }
+ 
+ @font-face {
+    font-family: 'SmoochSans-VariableFont_wght';
+    src: url('../fonts/SmoochSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+ }
+
 body {
     margin: 0;
     padding: 0;
@@ -16,7 +31,7 @@ body {
     margin: 15px;
     padding: 15px;
     border-radius: 10px;
-    margin: 10% 0;
+    margin: 3% 0;
 }
 
 .img_card{
@@ -73,12 +88,14 @@ body {
     display: block;
 }
 
-.img_label>p{
+p{
     margin-bottom: 0px;
+    font-family: 'SmoochSans-VariableFont_wght';
 }
 
 .img_label>h2{
     margin-bottom: 0px;
+    font-family: 'StoryScript-Regular';
 }
 
 .img_card {
@@ -106,10 +123,10 @@ body {
 
 .sidebar-banner {
     position: fixed;
-    top: 120px; /* מתחת לניווט */
-    right: 0;   /* בצד ימין של המסך */
+    top: 500px;
+    right: 0;   
     width: 160px;
-    height: 600px;
+    height: auto;
     background-color: #fff;
     border: 2px solid #ccc;
     border-radius: 10px 0 0 10px;
